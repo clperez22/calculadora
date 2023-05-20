@@ -1,7 +1,9 @@
+html{
+    background-color: black; 
+}
 #root {
     max-width: 375px;
     height: 5rem;
-   
 }
 .headerr {
     width: 50rem ;
@@ -100,6 +102,7 @@
 }
 .teclas:hover {
     font-weight: 800;
+    background-color: rgb(63, 62, 62);
 }
 .num {
     background-color: rgb(78, 78, 78);
