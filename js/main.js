@@ -1,36 +1,31 @@
-tcsss();
-
 let resultaddo = document.querySelector("#pantalla");
 
-function agt(){
+function agt() {
     let ll = this.innerHTML;
-    resultaddo = document.querySelector("#pantalla");
     resultaddo.value = resultaddo.value + ll;
 }
 
-function eloperacion(){
-    resultaddo = document.querySelector("#pantalla");
+function eloperacion() {
     resultaddo.value = "";
 }
 
-function eltdo(){
-    let rresultado = document.querySelector("#pantalla");
-    rresultado.value = "0";
+function eltdo() {
+    resultaddo.value = "0";
     document.querySelector(".pnt").innerHTML = "";
 }
-function elletra(){
+
+function elletra() {
     var content = resultaddo.value;
     var nuevoValor = content.slice(0, -1);
     resultaddo.value = nuevoValor;
 }
 
-function operacion(){
-    operacion = document.querySelector("#pantalla");
+function operacion() {
+    let operacion = document.querySelector("#pantalla");
     let t = eval(operacion.value);
-    sigg(operacion.value,t);
+    sigg(operacion.value, t);
     operacion.value = t;
 }
-
 
 let keys_dom = document.querySelectorAll(".teclas");
 

@@ -1,31 +1,29 @@
-html{
+html {
     max-width: 375px;
-    background-color: black; 
+    background-color: black;
 }
 
 .headerr {
-    width: 50rem ;
+    width: 50rem;
     padding: 0.1rem 1rem;
     background-color: rgb(240, 137, 11);
-    
     font-size: 1.5rem;
     display: flex;
     align-items: center;
 }
+
 .headerr img {
-   width: 4rem;
-   height: 4rem;
-   margin: 1rem;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
 }
+
 .pnt {
     list-style: none;
     padding: 5rem;
     height: 11.5rem;
-    width: 50rem ;
-    
-    background-color:rgb(0, 0, 0);
- 
-  
+    width: 50rem;
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-items: flex-end;
@@ -37,41 +35,41 @@ html{
     font-size: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
-    color:rgb(122, 119, 119);
-
+    color: rgb(122, 119, 119);
 }
+
 .signo-igual {
     color: rgb(240, 137, 11);
     justify-self: right;
 }
+
 .result {
     font-weight: 500;
     justify-self: right;
-   
-    color:rgb(122, 119, 119);
+    color: rgb(122, 119, 119);
 }
+
 #pantalla {
     display: flex;
     width: 50rem;
     height: 6.5rem;
     font-size: 2.5rem;
     font-weight: 600;
-    
     border: none;
     outline: none;
     padding: 1rem;
-
     background-color: rgb(0, 0, 0);
-    color:white;
+    color: white;
 }
-.text{
-    align-items:end;
+
+.text {
+    align-items: end;
 }
+
 .esc {
     display: grid;
-    grid-template-columns: repeat(5,8.8rem);
-    grid-template-rows: repeat(5,6.6rem);
+    grid-template-columns: repeat(5, 8.8rem);
+    grid-template-rows: repeat(5, 6.6rem);
     gap: 1rem;
     padding: 1rem;
     width: 50rem;
@@ -79,35 +77,62 @@ html{
 }
 
 .teclas {
-   
     border-radius: 1rem;
     font-size: 1.8rem;
     font-weight: 600;
     background-color: rgb(32, 32, 32);
     color: white;
     cursor: pointer;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .eliminar {
     width: 40%;
 }
+
 .teclas:active {
-    background-color:rgb(223, 145, 1) ;
+    background-color: rgb(223, 145, 1);
 }
+
 .teclas:hover {
     font-weight: 800;
     background-color: rgb(63, 62, 62);
 }
+
 .num {
     background-color: rgb(78, 78, 78);
 }
+
 .igual {
     background-color: rgb(223, 145, 1);
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 6;
+}
+
+@media screen and (max-width: 480px) {
+    #root {
+        margin-top: 1rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .pnt {
+        height: 100%;
+    }
+
+    .esc {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 4.5rem);
+        gap: 1rem;
+        padding: 1rem;
+        width: 100%;
+        background-color: black;
+    }
 }
