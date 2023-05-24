@@ -2,12 +2,10 @@ html {
     max-width: 300px;
     height: 5px;
     background-color: rgb(0, 0, 0);
-
 }
 
 .headerr {
     width: 50rem;
-    padding: 0.1rem 1rem;
     background-color:rgb(221, 204, 46);
     font-size: 1.5rem;
     display: flex;
@@ -122,17 +120,9 @@ html {
 }
 
 @media screen and (max-width: 480px) {
-    #root {
-        margin-top: 1rem;
-      
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
+ 
     
     .headerr {
-     
         width: 38rem;
         padding: 0.1rem 1rem;
         background-color: rgb(18, 53, 248);
