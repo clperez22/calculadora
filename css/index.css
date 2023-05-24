@@ -163,7 +163,6 @@ html {
         grid-template-columns: repeat(5, 4fr);
         grid-template-rows: repeat(5,7rem);
         gap: 2rem;
-        margin-top: 2rem;
         width: 38rem;
         background-color:rgb(0, 0, 0)
     }
