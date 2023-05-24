@@ -13,7 +13,7 @@ function sigg(operation, result) {
     resultSpan.classList.add("result");
     resultSpan.textContent = result;
     deleteButton.classList.add("delete-item");
-    deleteButton.textContent = "X";
+    deleteButton.textContent = " X ";
   
     listItem.appendChild(operationSpan);
     listItem.appendChild(equalSpan);
