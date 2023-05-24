@@ -149,8 +149,8 @@ html {
     #pantalla {
         display: flex;
         width: 38rem;
-        height: 3rem;
-        font-size: 2.5rem;
+        height: 4rem;
+        font-size: 2rem;
         font-weight: 600;
         border: none;
         outline: none;
